@@ -12,7 +12,19 @@
 		background-color: blueviolet;
 		min-height: 100vh;
 	}
-	div { 
+	main {
+		display: flex;
+		justify-content: end;
+	}
+	section {
+		min-width: 300px;
+		padding: 40px 20px;
+		align-self: end;
+		color: salmon;
+		background-color: aqua;
+		z-index: 1;
+	}
+	#scene-container { 
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -28,7 +40,15 @@
 </style>
 <script type="module" src="src/main.js"></script>
 <body>
-	<div id="scene-container">
-	</div>
+	<main>
+		<div id="scene-container">
+
+		</div>
+		<section>
+			<h1>Thomas Aucoin-Lo</h1>
+			<p>Programmeur Web</p>
+		</section>
+		
+	</main>
 </body>
 </html>

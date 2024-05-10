@@ -4,7 +4,6 @@ function createRaycaster(mouse, camera, scene)
 {
   const raycaster = new Raycaster()
   raycaster.setFromCamera(mouse, camera)
-  return raycaster.intersectObjects(scene.children, false)
+  return raycaster.intersectObjects(scene.children, true)
 }
-
 export { createRaycaster }
